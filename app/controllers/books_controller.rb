@@ -51,6 +51,8 @@ class BooksController < ApplicationController
     @user = @book.user
     # 本の投稿者が誰なのか
     @booknew = Book.new
+    
+    @book_comment = BookComment.new
   end
 
   def destroy
